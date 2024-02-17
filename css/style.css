@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#home-page{
+
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #F7F7F7; */
+    background-image: linear-gradient(#F7F7F7 20%, #71181D);
+    text-align: center;
+    font-family: 'Island Moments', cursive;
+    color: #572F0C;
+    
+}
+
+#home-page-dark{
+
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#0A0A0C 10%, #18181A, #211F1F 45%, #344240 70%,#426766, #3F8F8B);
+    text-align: center;
+    font-family: 'Eagle Lake', Times New Roman, Times, serif;
+    color: #E6E9E8;
+}
+
+#home-page .title{
+    padding-top: 3%;
+    font-size: 65px;
+    letter-spacing: 3px;
+}
+
+#home-page-dark .title{
+    padding-top: 3%;
+    font-size: 40px;
+}
+
+#home-page .name{
+    margin-top: 3px;
+    font-size: 42px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home-page-dark .name{
+    margin-top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home-page button{
+    cursor: pointer;
+    margin: 20px;
+    padding: 7px;
+    font-size: 17px;
+    background-color: #FDEECC;
+    color: #835530;
+    border-color: #835530;
+    font-family: 'Philosopher', fantasy;
+    font-style: italic;
+}
+
+#home-page-dark button{
+    cursor: pointer;
+    margin: 21.5px;
+    padding: 7px;
+    font-size: 17px;
+    background-color: #555B52;
+    color: #C4C8C2;
+    font-family: 'Philosopher', fantasy;
+    font-style: italic;
+}
+
+.shake{
+    animation: shake 0.6s;
+}
+
+#home-page .box{
+    margin-top: 35px;
+    width: 445px;
+    height: 280px;
+    outline: 3px solid #412F07;
+    border: 20px ridge #D0BF9E;
+    border-bottom: 12px groove #D0BF9E;
+    box-shadow: 2px 2px #412F07 inset, -2px -2px #412F07 inset, 8px 10px 15px #CCC5B8 inset, -8px -6px 15px #CCC5B8 inset;
+    background-color: #ECE5D5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home-page-dark .box{
+    margin-top: 37px;
+    width: 478px;
+    height: 306px;
+    outline: 6px solid #A79E6C;
+    box-shadow: 3px 3px #5B5429 inset, -3px -3px #5B5429 inset, 9px 9px #A79E6C inset, -9px -9px #A79E6C inset, 15px 15px 20px #3E3D34 inset, -15px -15px 20px #3E3D34 inset;
+    background-image: linear-gradient( #50665A, #3E3D34);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#light-reset{
+    cursor: pointer;
+    position: absolute;
+    bottom: 57px;
+    right: 60px;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #341400;
+}
+
+#dark-reset{
+    cursor: pointer;
+    position: absolute;
+    line-height: 31px;
+    bottom: 45px;
+    right: 54px;
+    font-size: 20px;
+    color: #F5F8F7;
+}
+
+/* animations */
+
+@keyframes shake {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(7deg);}
+    45% {transform: rotate(-8deg);}
+    70% {transform: rotate(7deg);}
+    100% {transform: rotate(0deg);}
+}
